@@ -18,12 +18,8 @@ RUN chown -R diaspora:diaspora /var/run/diaspora/
 
 USER diaspora
 WORKDIR /home/diaspora/
-RUN sh /var/www/diaspora/docker/init.sh
+RUN source /var/www/diaspora/docker/init.sh
 
 WORKDIR /var/www/diaspora/
-RUN sh ./docker/install.sh
-
-WORKDIR /var/www/diaspora/
-EXPOSE 3000
-CMD sh ./docker/start.sh
+RUN source /var/www/diaspora/docker/install.sh
 
