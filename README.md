@@ -38,11 +38,12 @@ if everything run smoothly you should have a new librenet docker image:
 
 All you have to do is run it and attach the repository as a volume:
 
-`docker run`
+`docker run -v $(pwd):/var/www/diaspora/ -i -t librenet:latest /bin/bash -P`
 
-Once you are inside the container, all you have to do is run the diaspora* server script:
+Once you are inside the container, all you have to do is run mariadb and the diaspora* server script:
 
 ```
+mysqld_safe &
 su - diaspora
 cd /var/www/diaspora/
 ./script/server
@@ -57,7 +58,6 @@ docker inspect crazy_einstein
 
 (replace `crazy_einstein` with the name of your container)
 
-All changes you make on frontend code (css/haml) all they need is refreshing on browser. Changes on ruby code require to stop (`ctrl+c`) the server script and re-run it.
+To see changes you make on frontend code (haml) just refresh your browser. Changes on templates (haml) or on ruby code require to stop (`ctrl+c`) the server script and re-run it.
 
-Happy hacking :-)
-
+To stop the container just type `ctrl+D`. Happy hacking :-)

@@ -1,25 +1,15 @@
 FROM centos:centos7
 MAINTAINER Nikos Roussos <nikos@roussos.cc>
 
-RUN yum -y install http://ftp.osuosl.org/pub/fedora-epel/7/x86_64/e/epel-release-7-2.noarch.rpm
+RUN yum -y install epel-release
 RUN yum -y update
-RUN yum -y install tar make automake gcc gcc-c++ git net-tools libcurl-devel libxml2-devel libffi-devel libxslt-devel wget redis ImageMagick nodejs mariadb-devel mariadb-server vim-enhanced bash-completion wget patch libyaml-devel readline-devel bzip2 libtool bison
+RUN yum -y install tar make automake gcc gcc-c++ git net-tools libcurl-devel libxml2-devel libffi-devel libxslt-devel wget redis ImageMagick nodejs mariadb-devel mariadb-server vim-enhanced bash-completion wget patch libyaml-devel readline-devel bzip2 libtool bison sudo
 RUN yum -y clean all
 
-RUN mysql_install_db
-RUN chown -R mysql:mysql /var/lib/mysql
-RUN mysqld_safe &
-RUN mkdir /var/run/diaspora
+WORKDIR /app
 
-ADD . /var/www/diaspora/
-RUN useradd diaspora
-RUN chown -R diaspora:diaspora /var/www/diaspora/
-RUN chown -R diaspora:diaspora /var/run/diaspora/
+COPY . /app
 
-USER diaspora
-WORKDIR /home/diaspora/
-RUN source /var/www/diaspora/docker/init.sh
+EXPOSE 3000
 
-WORKDIR /var/www/diaspora/
-RUN source /var/www/diaspora/docker/install.sh
-
+CMD ["./docker/run.sh"]
