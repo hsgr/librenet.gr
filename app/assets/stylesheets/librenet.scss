@@ -1,0 +1,33 @@
+body > header {
+  .user-menu-avatar {
+    border-radius: 50%;
+  }
+
+  .diaspora_header_logo {
+    margin-top: 3px;
+    font-weight: bold;
+    color: #eee;
+    padding-right: 10px;
+  }
+
+  .logos-header-logo {
+      background-image: none;
+
+      &:hover {
+          background-image: none;
+          color: #ccc;
+      }
+  }
+
+  .header-nav {
+    > span {
+      margin-left: inherit;
+      border-left: none;
+      border-right: none;
+    }
+  }
+}
+
+.avatar {
+  border-radius: 50% !important;;
+}
