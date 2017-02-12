@@ -1,43 +1,7 @@
 .navbar.navbar-fixed-top {
   border-bottom: none;
-<<<<<<< HEAD
-}
-
-body > header {
-  box-shadow: 0 1px 3px rgba(0,0,0,0.9);
-  background: image-url('header-bg.png') rgb(40,35,35);
-  z-index: 1001;
-  padding: 6px 0;
-  color: #CCC;
-  height: 26px;
-  position: fixed;
-  width: 100%;
-  min-width: 620px;
-  top: 0;
-  left: 0;
-  border-bottom: 1px solid #000;
-
-  > div > div.container {
-    height: 26px;
-  }
-
-  .diaspora_header_logo {
-    float: left;
-    margin-top: -6px;
-    height: 38px;
-    width: 65px;
-  }
-
-  .ie-user-menu-active { height: 150px; }
-
-  a.header_root_link {
-    display: inline-block;
-    margin-top: 5px;
-  }
-=======
   box-shadow: 1px 0 2px $black;
   a:focus {outline: 0 none; }
->>>>>>> upstream/master
 
   .navbar-brand {
     font-weight: bold;
@@ -154,158 +118,6 @@ body > header {
       }
     }
   }
-<<<<<<< HEAD
-
-  #global_search {
-    float: right;
-    margin-right: 10px;
-    position: relative;
-
-    form {
-      position: absolute;
-      right: 0;
-
-      input {
-        box-shadow: 0 1px 1px #444;
-        border-radius: 15px;
-        @include transition(width);
-        width: 100px;
-        background-color: #444;
-        border: 1px solid #222;
-        font-size: 13px;
-        padding: 4px;
-        margin-top: 1px;
-
-        &:hover { background-color: #555; }
-
-        &.active {
-          background-color: $highlight-white;
-          background-color: rgba(160,160,160,0.6);
-        }
-
-        &:focus {
-          outline: none;
-          background-color: white;
-          width: 200px;
-        }
-
-        &::input-placeholder { text-shadow: none; }
-        &::placeholder { text-shadow: none; }
-        &.ac_loading::-webkit-search-cancel-button { -webkit-appearance: none; }
-      }
-    }
-  }
-
-  ul#user_menu {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    text-shadow: 0 1px 0 #000;
-    color: rgb(147,147,147);
-    min-width: 100px;
-    cursor: pointer;
-    z-index: 10;
-    display: inline;
-    visibility: hidden;
-    top: -4px;
-    float: right;
-    margin: -2px -3px 0px 0px;
-    padding: 0;
-
-    > li {
-      display: block;
-      border-left: 1px solid #333;
-      border-right: 1px solid #333;
-
-      &:first-child {
-        visibility: visible;
-      }
-
-      &:last-child {
-        border-bottom: 1px solid #333;
-      }
-    }
-
-    &.active {
-      box-shadow: 0 0px 13px rgba(20,20,20,0.5);
-      background-color: rgb(34,30,30);
-      visibility: visible;
-
-      > li {
-        border-color: $border-dark-grey;
-      }
-    }
-  }
-
-  .user-menu-item a {
-    padding: 4px 8px 4px 40px;
-    height: 100%;
-    color: $text-grey;
-
-    &:hover {
-      background-color: $blue;
-      color: $highlight-white;
-      text-decoration: none;
-    }
-  }
-
-  .user-menu-trigger {
-    padding: 10px 25px 10px 40px;
-
-    &:hover {
-      color: $highlight-white;
-      .user-name { color: $highlight-white; }
-    }
-  }
-
-  .user-name {
-
-    &:hover {
-      background-color: transparent;
-      text-decoration: none;
-    }
-
-    &:focus { outline: none; }
-  }
-
-  .user-menu-more-indicator {
-    position: absolute;
-    right: 5px;
-  }
-
-  .user-menu-avatar {
-    height: 25px;
-    width: 25px;
-    position: absolute;
-    left: 8px;
-    top: 8px;
-    display: block;
-  }
-
-  .header-nav {
-    font-weight: bold;
-    float: left;
-    height: 100%;
-    margin-right: 5px;
-    margin-top: 2px;
-
-    a {
-      padding: 0 10px;
-      width: 100%;
-      &:hover { text-decoration: none; }
-    }
-
-    > span {
-      height: 100%;
-      display: inline-block;
-      margin-left: -4px;
-      border-left: 1px solid #333;
-      border-right: 1px solid #333;
-
-      &:last-child {
-        margin-left: -5px;
-      }
-=======
   [class^="entypo-"], [class*="entypo-"] {
     color: inherit;
     font-size: $font-size-h3;
@@ -317,7 +129,6 @@ body > header {
       position: absolute;
       right: 10px;
       top: 10px;
->>>>>>> upstream/master
     }
   }
 
