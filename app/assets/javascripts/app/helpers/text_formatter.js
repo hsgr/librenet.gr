@@ -26,13 +26,25 @@
           array[index][1] = attribute[1].replace(/^www\./, "http://www.");
         }
       });
-      tokens[idx].attrPush([ "target", "_blank" ]);
+      tokens[idx].attrPush(["target", "_blank"]);
+      tokens[idx].attrPush(["rel", "noopener noreferrer"]);
+    });
+
+    md.use(inlinePlugin, "responsive_images", "image", function (tokens, idx) {
+      tokens[idx].attrPush(["class", "img-responsive"]);
     });
 
     var hashtagPlugin = window.markdownitHashtag;
     md.use(hashtagPlugin, {
       // compare tag_text_regexp in app/models/acts_as_taggable_on-tag.rb
-      hashtagRegExp: "[" + PosixBracketExpressions.alnum + "_\\-]+|<3",
+      hashtagRegExp: "[" + PosixBracketExpressions.word +
+                           "\\u055b" + // Armenian emphasis mark
+                           "\\u055c" + // Armenian exclamation mark
+                           "\\u055e" + // Armenian question mark
+                           "\\u058a" + // Armenian hyphen
+                           "_" +
+                           "\\-" +
+                     "]+|<3",
       // compare tag_strings in lib/diaspora/taggabe.rb
       preceding: "^|\\s"
     });
@@ -49,7 +61,7 @@
     var supPlugin = window.markdownitSup;
     md.use(supPlugin);
     var sanitizerPlugin = window.markdownitSanitizer;
-    md.use(sanitizerPlugin);
+    md.use(sanitizerPlugin, {imageClass: "img-responsive"});
 
     var hljs = window.hljs;
     md.set({
@@ -76,7 +88,6 @@
 
     // Bootstrap table markup
     md.renderer.rules.table_open = function () { return "<table class=\"table table-striped\">\n"; };
-
     return md.render(text);
   };
 })();

@@ -3,26 +3,41 @@
 #   the COPYRIGHT file.
 
 module PublisherHelper
-  def remote?
-    params[:controller] != "tags"
+  def service_button(service)
+    provider_title = I18n.t("services.index.share_to", provider: service.provider.titleize)
+    content_tag :div,
+                class:   "btn btn-link service_icon dim",
+                title:   "#{provider_title} (#{service.nickname})",
+                id:      service.provider,
+                maxchar: service.class::MAX_CHARACTERS,
+                data:    {toggle: "tooltip", placement: "bottom"} do
+      if service.provider == "wordpress"
+        content_tag(:span, "", class: "social-media-logos-wordpress-16x16")
+      else
+        content_tag(:i, "", class: "entypo-social-#{service.provider} small")
+      end
+    end
+  end
+
+  def public_selected?(selected_aspects)
+    "public" == selected_aspects.try(:first) || publisher_boolean?(:public)
   end
 
   def all_aspects_selected?(selected_aspects)
-    @all_aspects_selected ||= all_aspects.size == selected_aspects.size
+    !all_aspects.empty? && all_aspects.size == selected_aspects.size && !public_selected?(selected_aspects)
   end
 
-  def service_button(service)
-    content_tag :div,
-                :class => "btn btn-link service_icon dim",
-                :title => "#{service.provider.titleize} (#{service.nickname})",
-                :id => "#{service.provider}",
-                :maxchar => "#{service.class::MAX_CHARACTERS}",
-                :data  => {:toggle=>'tooltip', :placement=>'bottom'} do
-      if service.provider == 'wordpress'
-        content_tag(:span, '', :class => "social_media_logos-wordpress-16x16")
-      else
-        content_tag(:i, '', :class => "entypo small #{ service.provider }")
-      end
-    end
+  def aspect_selected?(aspect, selected_aspects)
+    selected_aspects.include?(aspect) && !all_aspects_selected?(selected_aspects) && !public_selected?(selected_aspects)
+  end
+
+  def publisher_open?
+    publisher_boolean?(:open)
+  end
+
+  private
+
+  def publisher_boolean?(option)
+    @stream.try(:publisher).try(option) == true
   end
 end
