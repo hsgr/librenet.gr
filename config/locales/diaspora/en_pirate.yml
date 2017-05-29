@@ -490,7 +490,6 @@ en_pirate:
       posting: "Firin!"
       remove_location: "Eye patch ye location!"
       share: "Fire!"
-      upload_photos: "Hang up portraits"
       whats_on_your_mind: "What be botherin' you?"
     stream_element:
       via: "Via %{link}"
@@ -500,8 +499,6 @@ en_pirate:
     message:
       default: "Blargh! Ye secret code didint match with the image ye scalawag!"
   status_messages:
-    create:
-      success: "Ye've successfully mentioned: %{names}"
     new:
       mentioning: "Mentionin': %{person}"
     too_long: "{\"few\"=>\"Ye scallywag, make yer status messages less than %{count} characters\", \"many\"=>\"Ye scallywag,make yer status messages less than %{count} characters\", \"one\"=>\"Ye scallywag, make yer status messages less than %{count} character\", \"other\"=>\"Ye scallywag, make yer status messages less than %{count} characters\", \"two\"=>\"Ye scallywag, make yer status messages less than %{count} characters\", \"zero\"=>\"Ye scallywag,make yer status messages less than %{count} characters\"}"

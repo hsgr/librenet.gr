@@ -443,14 +443,11 @@ zh-CN:
         newhere: "新用户"
       posting: "发布中……"
       share: "分享"
-      upload_photos: "上载照片"
       whats_on_your_mind: "您想到了什么？"
     stream_element:
       via: "通过 %{link}"
       via_mobile: "通过移动设备"
   status_messages:
-    create:
-      success: "成功推荐了: %{names}"
     new:
       mentioning: "提及发布中: %{person}"
     too_long: "{\"other\"=>\"请确保您的状态信息不超过 %{count} 个字符\", \"zero\"=>\"请确保您的状态信息不超过 %{count} 个字符\"}"

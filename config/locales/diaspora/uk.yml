@@ -1090,7 +1090,6 @@ uk:
       posting: "Надсилання..."
       remove_location: "Видалити місцезнаходження"
       share: "Поділитися"
-      upload_photos: "Завантажити світлини"
       whats_on_your_mind: "Про що ви думаєте?"
     stream_element:
       via: "через %{link}"
@@ -1118,8 +1117,6 @@ uk:
     total_users: "Всього користувачів"
     version: "Версія"
   status_messages:
-    create:
-      success: "Успішно згадано: %{names}"
     new:
       mentioning: "Згадати: %{person}"
     too_long: "{\"few\"=>\"скоротіть, будь ласка, ваше повідомлення до %{count} символів\", \"many\"=>\"скоротіть, будь ласка, ваше повідомлення до %{count} символів\", \"one\"=>\"скоротіть, будь ласка, ваше повідомлення до %{count} символів\", \"other\"=>\"скоротіть, будь ласка, ваше повідомлення до %{count} символів\", \"zero\"=>\"скоротіть, будь ласка, ваше повідомлення до %{count} символів\"}"
@@ -1215,10 +1212,10 @@ uk:
       new_password: "Новий пароль"
       private_message: "ви отримали особисте повідомлення"
       receive_email_notifications: "Отримувати повідомлення електронною поштою, коли:"
-      request_export: "Запитати дані мого профелю"
-      request_export_photos: "Запросити мої фотографії"
+      request_export: "Отримати дані мого профілю"
+      request_export_photos: "Отримати мої фотографії"
       request_export_photos_update: "Оновити мої фотографії"
-      request_export_update: "Оновити дані мого профелю"
+      request_export_update: "Оновити дані мого профілю"
       reshared: "хтось ділиться вашим записом"
       show_community_spotlight: "Показувати рекомендованих користувачів у Потоці?"
       show_getting_started: "Повернути інформацію для початківців"

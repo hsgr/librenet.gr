@@ -545,7 +545,6 @@ he:
       posting: "בפרסום..."
       remove_location: "הסרת מיקום"
       share: "שיתוף"
-      upload_photos: "העלאת תמונות"
       whats_on_your_mind: "על מה אתם חושבים?"
     stream_element:
       via: "באמצעות %{link}"
@@ -558,8 +557,6 @@ he:
       user: "הקוד והתמונה שונים"
     placeholder: "הזינו את הערך שבתמונה"
   status_messages:
-    create:
-      success: "אוזכרו בהצלחה: %{names}"
     new:
       mentioning: "אזכור: %{person}"
     too_long: "{\"one\"=>\"נא לקצר את הודעות הסטטוס שלך לפחות מתו אחד\", \"other\"=>\"נא לקצר את הודעות הסטטוס שלך לפחות מ-%{count} תווים\", \"zero\"=>\"נא לקצר את הודעות הסטטוס שלך לפחות מ-%{count} תווים\"}"

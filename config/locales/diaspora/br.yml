@@ -596,7 +596,6 @@ br:
       posting: "Oc'h embann..."
       remove_location: "Lemel kuit al lec'hiadur"
       share: "Kenrannañ"
-      upload_photos: "Pellgargañ skeudennoù"
       whats_on_your_mind: "E petra emaoc'h o soñjal ?"
     stream_element:
       via: "dre %{link}"
@@ -609,8 +608,6 @@ br:
       user: "Disheñvel e oa ar skeudenn guzh diouzh ar c'hod"
     placeholder: "Merkañ talvoud ar skeudenn"
   status_messages:
-    create:
-      success: "Meneget gant berzh : %{names}"
     new:
       mentioning: "Menegiñ : %{person}"
     too_long: "{\"one\"=>\"Lezit ho kemennadennoù statud dindan %{count}\", \"other\"=>\"Lezit ho kemennadennoù statud dindan %{count}\", \"zero\"=>\"Lezit ho kemennadennoù statud dindan %{count}\"}"

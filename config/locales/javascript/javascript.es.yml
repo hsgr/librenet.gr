@@ -162,6 +162,7 @@ es:
       invalid_ext: "{file} tiene una extensión inválida. Solo se permiten {extensions}."
       looking_good: "¡Guau, estás increíble!"
       size_error: "{file} es demasiado grande, el tamaño máximo es de {sizeLimit}."
+      upload_photos: "Subir fotos"
     poll:
       answer_count:
         one: "1 voto"
@@ -218,6 +219,7 @@ es:
           quote: "Insertar comillas"
           write: "Editar mensaje"
         write: "Escribir"
+      mention_success: "Mencionaste correctamente <%= names %>"
       near_from: "Cerca de: <%= location %>"
       option: "Respuesta"
       public: "Público - tu publicación es visible para todos, incluyendo buscadores"

@@ -2,16 +2,13 @@
 #   licensed under the Affero General Public License version 3 or later.  See
 #   the COPYRIGHT file.
 
-require 'sidekiq/web'
+require "sidekiq/web"
 require "sidekiq/cron/web"
+Sidekiq::Web.set :sessions, false # disable rack session cookie
 
 Diaspora::Application.routes.draw do
 
   resources :report, except: %i(edit new show)
-
-  if Rails.env.production?
-    mount RailsAdmin::Engine => '/admin_panel', :as => 'rails_admin'
-  end
 
   constraints ->(req) { req.env["warden"].authenticate?(scope: :user) &&
                         req.env['warden'].user.admin? } do

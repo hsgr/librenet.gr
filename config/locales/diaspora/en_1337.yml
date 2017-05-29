@@ -517,14 +517,11 @@ en_1337:
         newhere: "#n00b_h3r3"
       posting: "5P4MM1NG..."
       share: "5P4M"
-      upload_photos: "UPL04D P1C5"
       whats_on_your_mind: "WH475 0N Y0UR M1ND?"
     stream_element:
       via: "V14 %{link}"
       via_mobile: "V14 M0B1L3"
   status_messages:
-    create:
-      success: "5UCC355FULLY M3N710N3D: %{names}"
     new:
       mentioning: "M3N710N1NG: %{person}"
     too_long: "{\"few\"=>\"PL3453 M4K3 Y0UR 5P4M5 L355 7H3N %{count} CH4R4C73R5\", \"many\"=>\"PL3453 M4K3 Y0UR 5P4M5 L355 7H3N %{count} CH4R4C73R5\", \"one\"=>\"PL3453 M4K3 Y0UR 5P4M5 L355 7H3N %{count} CH4R4C73R\\\"\", \"other\"=>\"PL3453 M4K3 Y0UR 5P4M5 L355 7H3N %{count} CH4R4C73R5\", \"two\"=>\"PL3453 M4K3 Y0UR 5P4M5 L355 7H3N %{count} CH4R4C73R5\", \"zero\"=>\"PL3453 M4K3 Y0UR 5P4M5 L355 7H3N %{count} CH4R4C73R5\"}"

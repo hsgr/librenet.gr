@@ -887,7 +887,6 @@ fi:
       posting: "Lähetetään..."
       remove_location: "Poista sijainti"
       share: "Jaa"
-      upload_photos: "Lisää kuvia"
       whats_on_your_mind: "Mitä mielessä?"
     stream_element:
       via: "%{link} kautta"
@@ -915,8 +914,6 @@ fi:
     total_users: "Käyttäjiä yhteensä"
     version: "Versio"
   status_messages:
-    create:
-      success: "Onnistuneesti mainittu: %{names}"
     new:
       mentioning: "Mainitse: %{person}"
     too_long: "Sinun täytyy lyhentää tilapäivitystäsi, sillä se voi sisältää enimmillään %{count} merkkiä. Tällä hetkellä päivityksessäsi on %{current_length} merkkiä."

@@ -14,6 +14,9 @@ app.views.PublisherUploader = Backbone.View.extend({
       element: this.el,
       button: this.el,
 
+      text: {
+        fileInputTitle: Diaspora.I18n.t("photo_uploader.upload_photos")
+      },
       request: {
         endpoint: Routes.photos(),
         params: {
@@ -149,7 +152,7 @@ app.views.PublisherUploader = Backbone.View.extend({
       dataType: "json",
       type: "DELETE",
       success: function() {
-        $.when(photo.fadeOut(400)).then(function(){
+        photo.fadeOut(400, function() {
           photo.remove();
 
           if( self.publisher.$(".publisher_photo").length === 0 ) {

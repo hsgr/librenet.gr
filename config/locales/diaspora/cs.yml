@@ -993,7 +993,6 @@ cs:
       posting: "Odesílám…"
       remove_location: "Odstranit pozici"
       share: "Sdílet"
-      upload_photos: "Nahrát fotky"
       whats_on_your_mind: "Co máte na mysli?"
     stream_element:
       via: "skrz %{link}"
@@ -1021,8 +1020,6 @@ cs:
     total_users: "Celkový počet uživatelů"
     version: "Verze"
   status_messages:
-    create:
-      success: "Úspěšně zmíněno: %{names}"
     new:
       mentioning: "Zmínka: %{person}"
     too_long: "{\"few\"=>\"prosím zkraťte svou zprávu na méně než %{count} znaky\", \"one\"=>\"prosím zkraťte svou zprávu na méně než %{count} znak\", \"other\"=>\"prosím zkraťte svou zprávu na méně než %{count} znaků\", \"zero\"=>\"prosím zkraťte svou zprávu na méně než %{count} znaků\"}"

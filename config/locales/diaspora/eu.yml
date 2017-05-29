@@ -501,14 +501,11 @@ eu:
         newhere: "Berria"
       posting: "Partekatzen..."
       share: "Partekatu"
-      upload_photos: "Argazkiak igo"
       whats_on_your_mind: "Zer ari zara pentsatzen?"
     stream_element:
       via: "%{link}(r)en bidez"
       via_mobile: "mugikorraren bidez"
   status_messages:
-    create:
-      success: "Arrakastaz aipatu dituzu: %{names}"
     new:
       mentioning: "Aipatzen: %{person}"
     too_long: "{\"few\"=>\"mesedez, egin itzazu zure mezuak %{count} karaktere baino motzagoak\", \"many\"=>\"mesedez, egin itzazu zure mezuak %{count} karaktere baino motzagoak\", \"one\"=>\"mesedez, egin itzazu zure mezuak karaktere %{count} baino motzagoak\", \"other\"=>\"mesedez, egin itzazu zure mezuak %{count} karaktere baino motzagoak\", \"two\"=>\"mesedez egin itzazu zure mezuak %{count} laraktere baino motzagoak\", \"zero\"=>\"mesedez, egin itzazu zure mezuak %{count} karaktere baino motzagoak\"}"

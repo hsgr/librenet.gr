@@ -170,6 +170,7 @@ da:
       invalid_ext: "{file} har en ugyldig filtype. Kun {extensions} er tilladt."
       looking_good: "Du ser virkelig pæn ud!"
       size_error: "{file} er for stor. Maksimal filstørrelse er {sizeLimit}."
+      upload_photos: "Upload fotografier"
     poll:
       answer_count:
         one: "1 stemme"
@@ -226,6 +227,7 @@ da:
           quote: "Indsæt citat"
           write: "Rediger besked"
         write: "Skriv"
+      mention_success: "<%= names %> blev omtalt."
       near_from: "Sendt fra: <%= location %>"
       option: "Svar"
       public: "Offentlig - dit indlæg vil være synligt for alle og kan findes af søgemaskiner"

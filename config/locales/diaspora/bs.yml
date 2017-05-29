@@ -578,14 +578,11 @@ bs:
         newhere: "NoviOvdje"
       posting: "Objavljujem..."
       share: "Dijeli"
-      upload_photos: "Objavi fotografije"
       whats_on_your_mind: "Šta vam je na umu?"
     stream_element:
       via: "putem %{link}"
       via_mobile: "putem mobitela"
   status_messages:
-    create:
-      success: "Uspješno spomenuti: %{names}"
     new:
       mentioning: "Spominje %{person}"
     too_long: "{\"few\"=>\"molimo da vaše poruke statusa sadrže manje nego %{count} karaktera\", \"many\"=>\"molimo da vaše poruke statusa sadrže manje nego %{count} karaktera\", \"one\"=>\"molimo da vaše poruke statusa sadrže manje nego %{count} karakter\", \"other\"=>\"molimo da vaše poruke statusa sadrže manje nego %{count} karaktera\", \"zero\"=>\"molimo da vaše poruke statusa sadrže manje nego %{count} karaktera\"}"

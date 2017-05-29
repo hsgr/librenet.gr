@@ -972,7 +972,6 @@ ru:
       posting: "Отправка..."
       remove_location: "Удалить местонахождение"
       share: "Поделиться"
-      upload_photos: "Загрузить фотографии"
       whats_on_your_mind: "О чём вы думаете?"
     stream_element:
       via: "через %{link}"
@@ -1000,8 +999,6 @@ ru:
     total_users: "Всего пользователей"
     version: "Версия"
   status_messages:
-    create:
-      success: "Успешно упомянут: %{names}"
     new:
       mentioning: "Упоминание: %{person}"
     too_long: "Будьте добры, сократите ваше сообщение до %{count} символов. На данный момент сообщение составляет %{current_length} символов"

@@ -630,14 +630,11 @@ ml:
         newhere: "NewHere"
       posting: "കുറിക്കുന്നു..."
       share: "പങ്കുവെയ്ക്കുക"
-      upload_photos: "Upload photos"
       whats_on_your_mind: "എന്താണ് നിങ്ങളുടെ മനസ്സില്‍?"
     stream_element:
       via: "via %{link}"
       via_mobile: "മൊബൈൽ ഉപയോഗിച്ച്"
   status_messages:
-    create:
-      success: "വിജയകരമായി സൂചിപ്പിച്ചു: %{names}"
     new:
       mentioning: "സൂചിപ്പിക്കുന്നു: %{person}"
     too_long: "{\"few\"=>\"please make your status messages less than %{count} characters\", \"many\"=>\"please make your status messages less than %{count} characters\", \"one\"=>\"please make your status messages less than %{count} character\", \"other\"=>\"please make your status messages less than %{count} characters\", \"two\"=>\"please make your status messages less than %{count} characters\", \"zero\"=>\"please make your status messages less than %{count} characters\"}"

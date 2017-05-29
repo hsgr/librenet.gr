@@ -165,6 +165,7 @@ ja:
       invalid_ext: "{file}の拡張子は正しくありません。{extensions}以外の拡張子は使えません。"
       looking_good: "なんてこったー！あなたは素晴らしいですね！"
       size_error: "{file}は大きすぎます。ファイルサイズの上限は{sizeLimit}です。"
+      upload_photos: "写真をアップロード"
     poll:
       answer_count:
         other: "<%=count%> 投票"
@@ -218,6 +219,7 @@ ja:
           quote: "引用の挿入"
           write: "メッセージを編集"
         write: "書く"
+      mention_success: "メンションしました: <%= names %>"
       near_from: "<%= location %>からの投稿"
       option: "回答"
       public: "公開 - 投稿は全ての人から見ることができ、検索エンジンで見つかるようになります"

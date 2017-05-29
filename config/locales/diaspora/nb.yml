@@ -906,7 +906,6 @@ nb:
       posting: "Publiserer ..."
       remove_location: "Fjern lokasjon"
       share: "Del"
-      upload_photos: "Last opp bilder"
       whats_on_your_mind: "Hva tenker du på?"
     stream_element:
       via: "via %{link}"
@@ -934,8 +933,6 @@ nb:
     total_users: "Totalt antall brukere"
     version: "Versjon"
   status_messages:
-    create:
-      success: "Nevnte :%{navn}"
     new:
       mentioning: "Nevner: %{person}"
     too_long: "{\"few\"=>\"du bør begrense statusmeldingene dine til %{count} tegn\", \"many\"=>\"Du bør begrense statusmeldingene dine til %{count} characters\", \"one\"=>\"du bør begrense statusmeldingene dine til %{count} tegn\", \"other\"=>\"du må gjøre statusmeldingene dine kortere enn %{count} tegn\", \"two\"=>\"vær så snill og skriv statusoppdateringer som er under %{count} tegn\", \"zero\"=>\"Statusmeldinger må være lengre enn ingenting.\"}"

@@ -1057,7 +1057,6 @@ en:
       formatWithMarkdown: "You can use %{markdown_link} to format your post"
       posting: "Posting..."
       share: "Share"
-      upload_photos: "Upload photos"
       get_location: "Get your location"
       remove_location: "Remove location"
       whats_on_your_mind: "What’s on your mind?"
@@ -1090,8 +1089,6 @@ en:
   status_messages:
     new:
       mentioning: "Mentioning: %{person}"
-    create:
-      success: "Successfully mentioned: %{names}"
     too_long: "Please make your status message fewer than %{count} characters. Right now it is %{current_length} characters"
 
   stream_helper:
@@ -1150,6 +1147,12 @@ en:
 
     activity:
       title: "My activity"
+
+    liked:
+      title: "Liked posts"
+
+    commented:
+      title: "Commented posts"
   users:
     edit:
       edit_account: "Edit account"

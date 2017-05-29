@@ -466,14 +466,11 @@ vi:
         newhere: "NewHere"
       posting: "Đăng bài..."
       share: "Chia sẻ"
-      upload_photos: "Tải ảnh lên"
       whats_on_your_mind: "Bạn đang nghĩ gì?"
     stream_element:
       via: "thông qua %{link}"
       via_mobile: "qua di động"
   status_messages:
-    create:
-      success: "Đã nhắc đến: %{names}"
     new:
       mentioning: "Đang nhắc đến: %{person}"
     too_long: "{\"other\"=>\"trạng thái của bạn phải có ít hơn %{count} kí tự\", \"zero\"=>\"trạng thái của bạn phải có ít hơn %{count} kí tự\"}"
