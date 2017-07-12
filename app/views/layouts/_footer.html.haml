@@ -1,7 +1,6 @@
 %footer.footer
   .container
-    .pull-left
-      .powered-by-diaspora
-        = render :partial =>'shared/powered'
+    .powered-by-diaspora.pull-left
+      = render :partial =>'shared/powered'
     %ul#footer_nav.pull-right
-      = render :partial =>'shared/links'
+      = render partial: "shared/links"
