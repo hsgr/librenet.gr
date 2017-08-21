@@ -234,7 +234,7 @@ group :production do # we don"t install these on travis to speed up test runs
 end
 
 # Newrelic support
-gem 'newrelic_rpm'
+gem 'newrelic_rpm', "~> 4.3"
 
 group :development do
   # Automatic test runs
