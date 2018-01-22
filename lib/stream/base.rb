@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Stream::Base
   TYPES_OF_POST_IN_STREAM = ['StatusMessage', 'Reshare']
 
@@ -63,10 +65,6 @@ class Stream::Base
   # @return [Aspect] The first aspect in #aspects
   def aspect
     aspects.first
-  end
-
-  def aspect_ids
-    aspects.map {|x| x.try(:id) }
   end
 
   def max_time=(time_string)

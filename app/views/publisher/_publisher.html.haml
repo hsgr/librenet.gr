@@ -3,7 +3,7 @@
     = form_for(StatusMessage.new) do |status|
       = status.error_messages
       %params
-        .publisher-textarea-wrapper#publisher_textarea_wrapper
+        .publisher-textarea-wrapper#publisher-textarea-wrapper
           - if current_user.getting_started?
             = status.text_area :text, :rows => 2, :value => h(publisher_formatted_text),
               :tabindex => 1, :placeholder => "#{t('contacts.index.start_a_conversation')}...",
@@ -42,8 +42,8 @@
       - elsif all_aspects_selected?(selected_aspects)
         = hidden_field_tag "aspect_ids[]", "all_aspects"
       - else
-        - for aspect_id in aspect_ids
-          = hidden_field_tag "aspect_ids[]", aspect_id.to_s
+        - selected_aspects.each do |aspect|
+          = hidden_field_tag "aspect_ids[]", aspect.id
 
       .hidden#publisher_spinner
         .loader
@@ -61,7 +61,5 @@
             .btn.btn-link.question_mark{title: t("shared.public_explain.manage"),
                            data: {toggle: "modal", target: "#publicExplainModal"}}
               %i.entypo-cog
-
-    = link_to "", contacts_path(aspect_ids: aspect_ids), class: "selected_contacts_link hidden"
 
 = render "shared/public_explain"
