@@ -593,7 +593,7 @@ en:
       code: "Code"
       toggle_navigation: "Toggle navigation"
     application:
-      powered_by: "Powered by diaspora*"
+      powered_by: "Powered by LibreOps"
       whats_new: "What’s new?"
       statistics_link: "Pod statistics"
       discourse: "Project discussions and support"
