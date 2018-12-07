@@ -820,12 +820,8 @@ DEPENDENCIES
   mini_magick (= 4.9.2)
   minitest
   mobile-fu (= 1.4.0)
-<<<<<<< HEAD
   newrelic_rpm (~> 4.3)
-  mysql2 (= 0.5.0)
-=======
   mysql2 (= 0.5.2)
->>>>>>> upstream/master
   nokogiri (= 1.8.5)
   omniauth (= 1.8.1)
   omniauth-tumblr (= 1.2)
