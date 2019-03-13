@@ -2,7 +2,7 @@
 %li= link_to t("layouts.application.whats_new"), changelog_url
 %li= link_to 'uptime', "https://status.libreops.cc", target: "_blank"
 %li= link_to t("layouts.application.statistics_link"), statistics_path
-%li= link_to(t('layouts.application.toggle'), toggle_mobile_path)
+%li= link_to t("layouts.application.switch_to_touch_optimized_mode"), toggle_mobile_path
 %li= link_to 'Source code', "https://gitlab.com/libreops/librenet.gr", target: "_blank"
 - if AppConfig.settings.terms.enable?
   %li= link_to t("_terms"), terms_path
