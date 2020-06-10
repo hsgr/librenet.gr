@@ -239,9 +239,6 @@ group :production do # we don"t install these on travis to speed up test runs
   gem "asset_sync", "2.7.0", require: false
 end
 
-# Newrelic support
-gem 'newrelic_rpm', "~> 4.3"
-
 group :development do
   # Automatic test runs
   gem "guard",          "2.15.0", require: false
